@@ -70,16 +70,3 @@ class Kmer_spectre:
             if int(key) > cut:
                 self.genome_size += int(key)*value
         print(round(self.genome_size/self.kmer_size), 0)
-        
-        
-        
-
-fik = Kmer_spectre()
-fik.read_kmer_dictionary("/home/aleksandr/Documents/dictionary_1.txt")
-fik.build_spectre()
-fik.approx(20)
-
-fik.analyse(file, 11, 35)
-fik.kmer_dict
-fik.build_spectre()
-fik.spectre_massive
